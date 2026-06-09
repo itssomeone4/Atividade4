@@ -1,0 +1,121 @@
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % 
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name
+xcode-select: note: No developer tools were found, requesting install.
+If developer tools are located at a non-default location on disk, use `sudo xcode-select --switch path/to/Xcode.app` to specify the Xcode that you wish to use for command line developer tools, and cancel the installation dialog.
+See `man xcode-select` for more details.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.email
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.name "julio" 
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git config --global user.email "jcesarmendesneto@gmail.com" 
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % ls -al ~/.ssh
+ls: /Users/juliocesarmendesneto/.ssh: No such file or directory
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % ssh-keygen -t rsa -b 4096 -C "jcesarmendesneto@gmail.com" 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/juliocesarmendesneto/.ssh/id_rsa): 
+Created directory '/Users/juliocesarmendesneto/.ssh'.
+Enter passphrase for "/Users/juliocesarmendesneto/.ssh/id_rsa" (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/juliocesarmendesneto/.ssh/id_rsa
+Your public key has been saved in /Users/juliocesarmendesneto/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:wEEEZlxMusgxblT6qVVC2NFX9bt5hrJlpBSuG5U2Z4A jcesarmendesneto@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   +BX*  ....    |
+|  .*ooo..  . .   |
+|  = o +.  E o .  |
+| + = = .   . + . |
+|  = =   S   B =  |
+| . o       = * + |
+|  .       o o * o|
+|           o = o |
+|          . .    |
++----[SHA256]-----+
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % eval "$(ssh-agent -s)" 
+Agent pid 31514
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % ssh-add ~/.ssh/id_rsa
+Identity added: /Users/juliocesarmendesneto/.ssh/id_rsa (jcesarmendesneto@gmail.com)
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % clip <~/.ssh/id_rsa.pub
+zsh: command not found: clip
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % clip<~/.ssh/id_rsa.pub 
+zsh: command not found: clip
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % <~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDgKi2u4BCrJpfBGoe9cv+pWahbM1tK4RX2ha1PSuwxhlfP/XCh0uI6kDEo0UHb7Na9y7KINSPHjYYt1K9EQxQnKLpqHgJkpWRf3F3q7KI3ws+tNHJZCtI3UgaBa94RiGFoGqv6pVm8kgoK+L94Js4QnwXquYf7aLSXW+n+7cctduNgnEiCLaTH8qO6/2JGCi3e9O1bxjXWt+69Xh/GJ5FMh9h1grGYDZaPJmG1HFc+1W1vkTIRq72dGWj9hpWHuz47qeiOHkTmbzIdEFB+H7Wu9W93b6/Or6mhyJTwM+cbMdbaHYKW8nBqrNyA5Nhikq1prThRCM1gxAXT1NLWi+OTRd4mm+IYREfUhUvx+XIDXt2kjkxlgYthTLs4S6AAKFAq6bT/Vi7LMSY9C/bAgubBi4XXMctztY0crl53Tkf9FKfUX8fqjNKMJPVII3I/gSyVUFFzreY7xHG5mvviyZl9KdpGgSu0kC6gBdNcdqADco+YUAAVTNGm5INzHcceTbFCS7aD3uFR+c67lsDd+EVO5nmtXhBqhPvj5kOzso2AKszspfcONXv/i2EZGcCI3CDwCEBpPIYKdqB0Uu99YcnPDQ/lxcbHHyGRX5umYGHfz5dtlXjTL2cdfn+tytI59GvGL3mLNgeojgpcEVLi65ic6hra4p5S5AG+GXGCXatrIQ== jcesarmendesneto@gmail.com
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % clip<~/.ssh/id_rsa.pub
+zsh: command not found: clip
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % clip < ~/.ssh/id_rsa.pub
+zsh: command not found: clip
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % clip< ~/.ssh/id_rsa.pub 
+zsh: command not found: clip
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % ssh -T git@github.com
+The authenticity of host 'github.com (4.228.31.150)' can't be established.
+ED25519 key fingerprint is: SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi Villager95! You've successfully authenticated, but GitHub does not provide shell access.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % git clone git@github.com:itssomeone4/Atividade4.git
+Cloning into 'Atividade4'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 16 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 5.14 KiB | 1.29 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % cd repositorio
+cd: no such file or directory: repositorio
+juliocesarmendesneto@MacBook-Air-de-Julio ~ % cd Atividade4
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git pull
+Already up to date.
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % code .  
+zsh: command not found: code
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % code .
+zsh: command not found: code
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git add .
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git commit -m "peter griifin"
+[main 9a85b03] peter griifin
+ 2 files changed, 13 insertions(+), 9 deletions(-)
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git push
+ERROR: Permission to itssomeone4/Atividade4.git denied to Villager95.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git push
+ERROR: Permission to itssomeone4/Atividade4.git denied to Villager95.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 489 bytes | 489.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:itssomeone4/Atividade4.git
+   b887e0a..9a85b03  main -> main
+juliocesarmendesneto@MacBook-Air-de-Julio Atividade4 % 
