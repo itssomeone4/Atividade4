@@ -1,12 +1,15 @@
 programa
 {
-	/*Henrique: In1
+	
+/*Henrique: In1
 	Julio: In2
 	Lucas: In3
 	*/
+	inclua biblioteca Util
+
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		inteiro n=Util.sorteio(1,2)
 	}
 }
 /* $$$ Portugol Studio $$$ 
