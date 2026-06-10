@@ -9,7 +9,7 @@ programa
 
 	funcao inicio()
 	{
-		inteiro n=Util.sorteio(1,2)
+		inteiro n=Util.sorteia(1,2)
 
 		se(n==1){
 			escreva ("cara")
