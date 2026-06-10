@@ -6,3 +6,4 @@ Integrante 3: Lucas Belucci
 Objetivos: Criar um algorítimo que joga uma moeda
 integrante 1 contribuições: Criação do repositório e do arquivo.por
 integrante 2 contribuições: Criação da variável para algoritmo.por
+integrante 3 contribuições: Criação do algoritmo.por condição se n==1 sair vai ser cara e se n==2 sair vai ser coroa.
