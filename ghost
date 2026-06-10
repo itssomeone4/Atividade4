@@ -1,0 +1,138 @@
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ git config --global user.name
+Lucas Belucci Bellini
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ git config --global user.email
+lucasbb2007@gmail.com
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ls -al ~/.ssh
+total 21
+drwxr-xr-x 1 Usuario 197121   0 May 21 22:53 ./
+drwxr-xr-x 1 Usuario 197121   0 Jun  8 23:02 ../
+-rw-r--r-- 1 Usuario 197121 828 May 21 22:50 known_hosts
+-rw-r--r-- 1 Usuario 197121  92 May 16 13:19 known_hosts.old
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ rm -f ~/.ssh/id_rsa~
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh-keygen -t rsa -b 4096 -C "lucasbb2007@gmail.com"
+bash: $'\302\226sh-keygen': command not found
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh-keygen -t rsa -b 4096 -C "lucasbb2007@gmail.com"
+bash: $'\302\226ssh-keygen': command not found
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh-keygen -t rsa -b 4096 -C"lucasbb2007@gmail.com"
+bash: $'\302\226ssh-keygen': command not found
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh-keygen -t rsa -b 4096 -C "lucasbb2007@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Usuario/.ssh/id_rsa):
+Enter passphrase for "/c/Users/Usuario/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Usuario/.ssh/id_rsa
+Your public key has been saved in /c/Users/Usuario/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:mCn6eKD5XfNzjjn9ekoKromQ+Q5LMQZpZCOKDyTsu2s lucasbb2007@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|+=               |
+|Oo.              |
+|B.               |
+|o+     +         |
+| +o . + S        |
+|.++. .           |
+|=+o.  +  ..      |
+|+E =.+ +o=o .    |
+|o+B.=.. ==+=.    |
++----[SHA256]-----+
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 1492
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/Usuario/.ssh/id_rsa (lucasbb2007@gmail.com)
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ clip < ~/.ssh/id_rsa.pub
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ ssh -T git@github.com
+Hi Lucas-Belucci-Bellini! You've successfully authenticated, but GitHub does not provide shell access.
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ gitgit clone git@github.com:itssomeone4/Atividade4.git
+bash: $'\302\226\302\226\302\226git': command not found
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ git clone git@github.com:itssomeone4/Atividade4.git
+Cloning into 'Atividade4'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 10 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ cd Atividade4
+bash: d: command not found
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$  cd Atividade4
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~ (main)
+$ cd Atividade4
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+$ git pull
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 16 (delta 4), reused 4 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (16/16), 7.38 KiB | 175.00 KiB/s, done.
+From github.com:itssomeone4/Atividade4
+   ce484fc..9a85b03  main               -> origin/main
+ * [new branch]      Villager95-patch-1 -> origin/Villager95-patch-1
+ * [new branch]      Villager95-patch-2 -> origin/Villager95-patch-2
+Updating ce484fc..9a85b03
+Fast-forward
+ README.md          |  6 ++++++
+ algoritimo.por.por | 19 +++++++++++--------
+ 2 files changed, 17 insertions(+), 8 deletions(-)
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+$ git add .
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+$ git commit -m"14wsamuel"
+[main 0a1c7d7] 14wsamuel
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 495 bytes | 495.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:itssomeone4/Atividade4.git
+   9a85b03..0a1c7d7  main -> main
+
+Usuario@DESKTOP-PTC15BI MINGW64 ~/Atividade4 (main)
